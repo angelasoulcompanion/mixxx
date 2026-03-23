@@ -169,9 +169,10 @@ class ImporterImpl {
     }
 
     void importMediaItem(ITLibMediaItem* item) {
-        // Skip DRM-protected and non-downloaded tracks
+        // Skip non-downloaded tracks (remote/streaming only)
+        // Allow DRM tracks to appear in list (downloaded Apple Music)
         bool isRemote = item.locationType == ITLibMediaItemLocationTypeRemote;
-        if (item.drmProtected || isRemote) {
+        if (isRemote) {
             return;
         }
 

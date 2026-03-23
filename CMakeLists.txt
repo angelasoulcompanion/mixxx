@@ -505,7 +505,7 @@ elseif(APPLE)
   endif()
 endif()
 
-project(mixxx VERSION 2.7.0 LANGUAGES C CXX)
+project(angelamixx VERSION 1.0.0 LANGUAGES C CXX)
 # Work around missing version suffixes support https://gitlab.kitware.com/cmake/cmake/-/issues/16716
 set(MIXXX_VERSION_PRERELEASE "alpha") # set to "alpha" "beta" or ""
 
@@ -2267,13 +2267,13 @@ if(APPLE AND MACOS_BUNDLE)
   set(MIXXX_INSTALL_BINDIR "${CMAKE_INSTALL_BINDIR}")
   set(
     MACOS_BUNDLE_NAME
-    Mixxx
+    AngelaMixx
     CACHE STRING
     "The macOS app bundle and executable name"
   )
   set(
     MACOS_BUNDLE_IDENTIFIER
-    org.mixxx.mixxx
+    com.angela.angelamixx
     CACHE STRING
     "The macOS app bundle identifier"
   )
@@ -2285,13 +2285,13 @@ elseif(APPLE AND IOS)
   set(MIXXX_INSTALL_BINDIR "${CMAKE_INSTALL_BINDIR}")
   set(
     IOS_BUNDLE_NAME
-    Mixxx
+    AngelaMixx
     CACHE STRING
     "The iOS app bundle and executable name"
   )
   set(
     IOS_BUNDLE_IDENTIFIER
-    org.mixxx.mixxx
+    com.angela.angelamixx
     CACHE STRING
     "The iOS app bundle identifier"
   )

@@ -651,8 +651,8 @@ UserSettingsPointer Upgrade::versionUpgrade(const QString& settingsPath) {
 bool Upgrade::askReScanLibrary() {
     QMessageBox msgBox;
     msgBox.setIconPixmap(QPixmap(MIXXX_ICON_PATH));
-    msgBox.setWindowTitle(QMessageBox::tr("Upgrading Mixxx"));
-    msgBox.setText(QMessageBox::tr("Mixxx now supports displaying cover art.\n"
+    msgBox.setWindowTitle(QMessageBox::tr("Upgrading AngelaMixx"));
+    msgBox.setText(QMessageBox::tr("AngelaMixx now supports displaying cover art.\n"
                       "Do you want to scan your library for cover files now?"));
     QPushButton* rescanButton = msgBox.addButton(
         QMessageBox::tr("Scan"), QMessageBox::AcceptRole);
@@ -665,9 +665,9 @@ bool Upgrade::askReScanLibrary() {
 
 bool Upgrade::askReanalyzeBeats() {
     QString windowTitle =
-            QMessageBox::tr("Upgrading Mixxx from v1.9.x/1.10.x.");
+            QMessageBox::tr("Upgrading AngelaMixx");
     QString mainHeading =
-            QMessageBox::tr("Mixxx has a new and improved beat detector.");
+            QMessageBox::tr("AngelaMixx has a new and improved beat detector.");
     QString paragraph1 = QMessageBox::tr(
         "When you load tracks, Mixxx can re-analyze them "
         "and generate new, more accurate beatgrids. This will make "
